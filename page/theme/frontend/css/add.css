@@ -72,16 +72,16 @@ body {
 }
 .btn-more {
   background-image: linear-gradient(to right, #00a573, #008ede);
-  transition: all 0.3s;
+  transition:  0.3s ease-in-out;
+  border: solid;
+  border-image: linear-gradient(to right, #00a573, #008ede);
+  border-image-slice: 1;
 }
 .btn-more:hover {
   background: -webkit-linear-gradient(#00a573, #008ede);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 1px solid;
-  border-image: linear-gradient(to right, #00a573, #008ede);
-  border-image-slice: 1;
 }
 .section-introduce .title h2::after {
   content: "";
@@ -125,5 +125,5 @@ body {
   transform: translateX(-50%);
 }
 .info-item {
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
