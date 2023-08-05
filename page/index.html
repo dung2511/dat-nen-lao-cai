@@ -541,12 +541,12 @@
       </div>
     </section>
     <footer
-      class="footer bg-[url('../images/bg-footer.png')] bg-no-repeat bg-[length:100%_100%] dp:mt-24"
+      class="footer bg-[url('../images/bg-footer.png')] bg-no-repeat bg-[length:100%_100%] xl:mt-40 dp:mt-52"
     >
       <div class="container mx-auto dp:px-64 2xl:px-32 xl:px-16 lg:px-8 px-2.5">
-        <div class="main-footer 2xl:py-14 xl:py-10 py-6">
+        <div class="main-footer 2xl:py-14 xl:py-10 py-6 relative">
           <div class="flex flex-wrap -mx-2">
-            <div class="w-full sm:w-1/2 xl:w-1/5 px-2 mb-4 lg:mb-0">
+            <div class="w-full sm:w-1/2 xl:mr-10 xl:w-1/5 px-2 mb-4 lg:mb-0">
               <div class="mb-8">
                 <a href="#" class="logo-footer">
                   <img src="theme/frontend/images/logo-footer.png" alt="" />
@@ -611,8 +611,12 @@
                 </li>
               </ul>
             </div>
-            <div class="w-full sm:w-1/2 xl:w-1/6 ml-12 px-2 mb-4 lg:mb-0">
-              <p class="title font-semibold text-[18px] mb-7 uppercase text-[#fff]">Link nhanh</p>
+            <div class="w-1/2 xl:w-[15%] xl:mr-10 px-2 mb-4 lg:mb-0">
+              <p
+                class="title font-semibold text-[18px] mb-7 uppercase text-[#fff]"
+              >
+                Link nhanh
+              </p>
               <div class="nav-footer">
                 <ul>
                   <li><a href="#" title="Trang chủ">Trang chủ</a></li>
@@ -623,19 +627,124 @@
                 </ul>
               </div>
             </div>
-            <div class="w-full sm:w-1/2 xl:w-1/5 ml-12 px-2 mb-4 lg:mb-0">
-              <p class="title font-semibold text-[18px] mb-7 uppercase text-[#fff]">Chính sách</p>
+            <div class="w-1/2 xl:w-1/5 px-2 mb-4 lg:mb-0">
+              <p
+                class="title font-semibold text-[18px] mb-7 uppercase text-[#fff]"
+              >
+                Chính sách
+              </p>
               <div class="nav-footer">
                 <ul>
-                  <li><a href="#" title="Chính sách & Quy định">Chính sách & Quy định</a></li>
-                  <li><a href="#" title="Chính sách & Quy định">Chính sách & Quy định</a></li>
-                  <li><a href="#" title="Chính sách & Quy định">Chính sách & Quy định</a></li>
-                  <li><a href="#" title="Chính sách & Quy định">Chính sách & Quy định</a></li>
-                  <li><a href="#" title="Chính sách & Quy định">Chính sách & Quy định</a></li>
+                  <li>
+                    <a href="#" title="Chính sách & Quy định"
+                      >Chính sách & Quy định</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" title="Chính sách & Quy định"
+                      >Chính sách & Quy định</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" title="Chính sách & Quy định"
+                      >Chính sách & Quy định</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" title="Chính sách & Quy định"
+                      >Chính sách & Quy định</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" title="Chính sách & Quy định"
+                      >Chính sách & Quy định</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
-            <div class="w-full"></div>
+          </div>
+          <div
+            class="w-full sm:w-1/2 xl:w-5/12 px-2 mb-4 xl:absolute right-0 bottom-0 lg:mb-0"
+          >
+            <div class="form-footer bg-[#fff] p-6">
+              <form action="">
+                <div class="content-form-footer">
+                  <div class="title-form dp:pt-9 dp:px-20 mb-6">
+                    <h3
+                      class="title text-center text-[#252525] uppercase mb-2 font-bold dp:text-[28px]"
+                    >
+                      tư vấn miễn phí
+                    </h3>
+                    <p class="font-medium text-center text-[#454545]">
+                      Quý khách vui lòng điền thông tin để nhận được tư vấn miễn
+                      phí sớm nhất từ Đất Nền Lào Cai
+                    </p>
+                  </div>
+                  <div class="input-form flex flex-wrap">
+                    <div class="form-group w-full md:w-1/2 p-3">
+                      <label class="text-[#252525] font-bold" for="name"
+                        >Họ và tên
+                        <strong class="text-[#FF0000]">*</strong></label
+                      >
+                      <input
+                        type="text"
+                        name="fullname"
+                        placeholder="Nhập..."
+                        class="placeholder-[#888888] bg-[#f5f5f5] w-full mt-2 p-4"
+                      />
+                    </div>
+                    <div class="form-group w-full md:w-1/2 p-3">
+                      <label class="text-[#252525] font-bold" for="number-phone"
+                        >Số điện thoại<strong class="text-[#FF0000]"
+                          >*</strong
+                        ></label
+                      >
+                      <input
+                        type="tel"
+                        name="fullname"
+                        placeholder="Nhập..."
+                        class="placeholder-[#888888] bg-[#f5f5f5] w-full mt-2 p-4"
+                      />
+                    </div>
+                    <div class="form-group w-full md:w-1/2 p-3">
+                      <label class="text-[#252525] font-bold" for="email"
+                        >Email</label
+                      >
+                      <input
+                        type="text"
+                        name="fullname"
+                        placeholder="Nhập..."
+                        class="placeholder-[#888888] bg-[#f5f5f5] w-full mt-2 p-4"
+                      />
+                    </div>
+                    <div class="form-group w-full md:w-1/2 p-3">
+                      <label class="text-[#252525] font-bold" for=""
+                        >Khu vực cần tư vấn<strong class="text-[#FF0000]"
+                          >*</strong
+                        ></label
+                      >
+                      <select
+                        name="area"
+                        id=""
+                        class="bg-[#f5f5f5] w-full mt-2 p-4"
+                      >
+                        <option value="1">Khu vực 1</option>
+                        <option value="2">Khu vực 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="btn-form-footer flex justify-center mt-8">
+                    <button
+                      class="text-white btn-more px-[22px] text-[18px] flex items-center py-3"
+                    >
+                      <span class="mr-2">Xem Tất Cả </span
+                      ><i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>

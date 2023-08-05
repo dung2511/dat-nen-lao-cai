@@ -40,7 +40,10 @@
 .fa-regular {
   font-weight: 400;
 }
-
+input,
+select {
+  outline: none;
+}
 body {
   font-family: "SVN-Gilroy";
 }
@@ -181,4 +184,13 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.footer .main-footer .form-footer {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+.breadcumb {
+  display: flex;
+}
+.breadcumb li{
+  margin-right: 8px;
 }
