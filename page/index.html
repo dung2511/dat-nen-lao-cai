@@ -6,17 +6,18 @@
     <link rel="stylesheet" href="theme/frontend/css/style.css" />
     <link rel="stylesheet" href="theme/frontend/css/add.css" />
     <link rel="stylesheet" href="theme/frontend/css/fontawesome.css" />
+    <link rel="stylesheet" href="theme/frontend/css/swiper-bundle.min.css" />
     <title>Đất nền Lào cai</title>
   </head>
   <body>
-    <header class="header header-index bg-[#FFFFFF33]">
+    <header class="header header-index bg-[#FFFFFF33] relative">
       <div class="container mx-auto dp:pr-64 xl:pr-16 2xl:pr-32">
         <div class="flex items-center justify-between">
           <div class="hampurger block xl:hidden">
             <span> <i class="fa-solid fa-bars"></i></span>
           </div>
-          <div class="logo">
-            <a href="#" class="bg-[#fff]">
+          <div class="h-logo absolute h-full">
+            <a href="#" class="bg-[#fff] flex items-center justify-center h-full">
               <img src="theme/frontend/images/logo-2.png" alt="" />
             </a>
           </div>
@@ -44,13 +45,13 @@
               </span>
             </div>
           </div>
-          <div class="hotline p-2 bg-[#ffffff]">
-            <a href="tel:0935363986" class="flex items-center">
+          <div class="hotline py-9">
+            <a href="tel:0935363986" class="flex items-center bg-[#ffffff]">
               <div class="icon-hotline mx-2">
                 <img src="theme/frontend/images/icon-hotline.svg" alt="" />
               </div>
               <div class="number-phone mx-2">
-                <p class="text-[12px]">
+                <p class="text-[12px] font-semibold">
                   <span>Hotline</span>
                 </p>
                 <p
@@ -106,8 +107,8 @@
       class="section-introduce lg:bg-[url('../images/bg-section-intro.png')] py-8 xl:py-10 2xl:py-16 dp:py-[76px] bg-no-repeat bg-right-top"
     >
       <div class="container mx-auto px-2.5 lg:px-8 2xl:px-32 xl:px-16 dp:px-64">
-        <div class="flex flex-wrap justify-between">
-          <div class="title w-full lg:w-1/2 px-2 mb-10 lg:mb-0">
+        <div class="flex flex-wrap justify-between lg:-mx-7">
+          <div class="title mb-10 lg:mb-0 w-full lg:w-1/2 lg:px-7">
             <h2 class="dp:text-[36px] font-semibold capitalize relative pb-4">
               <span>Giới thiệu về tỉnh lào cai</span>
             </h2>
@@ -137,7 +138,7 @@
               ></a>
             </div>
           </div>
-          <div class="w-full lg:w-1/2 px-2">
+          <div class="w-full lg:w-1/2 lg:px-7">
             <img
               src="theme/frontend/images/images-intro.png"
               alt=""
@@ -302,7 +303,9 @@
           </h2>
         </div>
         <div class="list-items mt-10 flex flex-wrap items-stretch -mx-3">
-          <div class="w-full mb-4 lg:mb-0 md:w-1/2 lg:w-1/3 px-3 list-new__index md:flex-1">
+          <div
+            class="w-full mb-4 lg:mb-0 md:w-1/2 lg:w-1/3 px-3 list-new__index md:flex-1"
+          >
             <div class="item-news h-full">
               <div class="image w-full">
                 <a href="#" class="c-img img__">
@@ -340,7 +343,9 @@
               </div>
             </div>
           </div>
-          <div class="w-full mb-4 lg:mb-0 md:w-1/2 lg:w-1/3 px-3 list-new__index md:flex-1">
+          <div
+            class="w-full mb-4 lg:mb-0 md:w-1/2 lg:w-1/3 px-3 list-new__index md:flex-1"
+          >
             <div class="item-news h-full">
               <div class="image w-full">
                 <a href="#" class="c-img img__">
@@ -385,8 +390,8 @@
               >
                 bài viết xem nhiều
               </p>
-              <div class="list-news-m p-4 max-h-[391px] overflow-auto">
-                <div class="item-news flex mb-4 last:mb-0">
+              <div class="list-post-m p-4 max-h-[391px] overflow-auto">
+                <div class="item-post flex mb-4 last:mb-0">
                   <div class="image w-20 last:mb-0 shrink-0 mr-3">
                     <a
                       href="#"
@@ -423,7 +428,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item-news flex mb-4 last:mb-0">
+                <div class="item-post flex mb-4 last:mb-0">
                   <div class="image w-20 last:mb-0 shrink-0 mr-3">
                     <a
                       href="#"
@@ -460,7 +465,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item-news flex mb-4 last:mb-0">
+                <div class="item-post flex mb-4 last:mb-0">
                   <div class="image w-20 last:mb-0 shrink-0 mr-3">
                     <a
                       href="#"
@@ -497,7 +502,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item-news flex mb-4 last:mb-0">
+                <div class="item-post flex mb-4 last:mb-0">
                   <div class="image w-20 last:mb-0 shrink-0 mr-3">
                     <a
                       href="#"
@@ -534,7 +539,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item-news flex mb-4 last:mb-0">
+                <div class="item-post flex mb-4 last:mb-0">
                   <div class="image w-20 last:mb-0 shrink-0 mr-3">
                     <a
                       href="#"
@@ -586,220 +591,230 @@
       </div>
     </section>
     <footer
-      class="footer bg-[url('../images/bg-footer.png')] bg-no-repeat bg-[length:100%_100%] xl:mt-40 dp:mt-52"
+      class="footer bg-[url('../images/bg-footer.png')] bg-no-repeat bg-[length:100%_100%] mt-14 xl:mt-40 2xl:mt-52 dp:mt-52"
     >
       <div
-        class="container mx-auto dp:px-64 2xl:px-32 xl:px-16 lg:px-8 px-2.5 flex"
+        class="container mx-auto dp:px-64 2xl:px-32 xl:px-16 lg:px-8 px-3 "
       >
-        <div class="main-footer 2xl:pt-14 xl:pt-10 pt-6 pb-4 w-2/3 flex-[1]">
-          <div class="flex flex-wrap -mx-2">
-            <div class="w-full sm:w-1/2 xl:mr-10 xl:w-1/5 px-2 mb-4 lg:mb-0">
-              <div class="mb-8">
-                <a href="#" class="logo-footer">
-                  <img src="theme/frontend/images/logo-footer.png" alt="" />
-                </a>
-              </div>
-              <div class="f-contact mb-4 last:mb-0">
-                <a href="tel:0935 363 986" class="text-[#fff] flex items-start"
-                  ><img
-                    src="theme/frontend/images/phone.png"
-                    alt=""
-                    class="mr-2 flex-shrink-0"
-                  />
-                  <span class="font-medium">0935 363 986</span></a
-                >
-              </div>
-              <div class="f-contact mb-4 last:mb-0">
-                <a href="tel:0935 363 986" class="text-[#fff] flex items-start"
-                  ><img
-                    src="theme/frontend/images/email.png"
-                    alt=""
-                    class="mr-2 flex-shrink-0"
-                  />
-                  <span class="font-medium">datnenlaocai@gmail.com</span></a
-                >
-              </div>
-              <div class="f-contact mb-6 last:mb-0">
-                <a href="tel:0935 363 986" class="text-[#fff] flex items-start"
-                  ><img
-                    src="theme/frontend/images/address.png"
-                    alt=""
-                    class="mr-2 flex-shrink-0"
-                  />
-                  <span class="font-medium"
-                    >19/68 Lưu Hữu Phước, Mỹ Đình 1, Nam Từ Liêm, Hà Nội</span
-                  ></a
-                >
-              </div>
-              <ul class="f-contact social-footer mb-4 last:mb-0 flex">
-                <li class="mr-6 last:mr-0">
-                  <a href="#" class=""
+        <div class="flex flex-wrap xl:-mx-12">
+          <div class="main-footer order-2 xl:order-1 2xl:pt-14 xl:pt-10 pt-6 pb-4 w-full xl:w-3/5 xl:px-12">
+            <div class="flex flex-wrap items-end -px-3 md:-px-6 2xl:-px-12">
+              <div class="w-full md:w-2/5 lg:w-2/5 xl:w-2/5 px-3 md:px-6 2xl:px-12 mb-4 lg:mb-0">
+                <div class="mb-8">
+                  <a href="#" class="logo-footer">
+                    <img src="theme/frontend/images/logo-footer.png" alt="" />
+                  </a>
+                </div>
+                <div class="f-contact mb-4 last:mb-0">
+                  <a
+                    href="tel:0935 363 986"
+                    class="text-[#fff] flex items-start"
                     ><img
-                      src="theme/frontend/images/fb.png"
+                      src="theme/frontend/images/phone.png"
                       alt=""
                       class="mr-2 flex-shrink-0"
-                  /></a>
-                </li>
-                <li class="mr-6 last:mr-0">
-                  <a href="#"
+                    />
+                    <span class="font-medium">0935 363 986</span></a
+                  >
+                </div>
+                <div class="f-contact mb-4 last:mb-0">
+                  <a
+                    href="tel:0935 363 986"
+                    class="text-[#fff] flex items-start"
                     ><img
-                      src="theme/frontend/images/tiktok.png"
+                      src="theme/frontend/images/email.png"
                       alt=""
                       class="mr-2 flex-shrink-0"
-                  /></a>
-                </li>
-                <li class="mr-6 last:mr-0">
-                  <a href="#"
+                    />
+                    <span class="font-medium">datnenlaocai@gmail.com</span></a
+                  >
+                </div>
+                <div class="f-contact mb-6 last:mb-0">
+                  <a
+                    href="tel:0935 363 986"
+                    class="text-[#fff] flex items-start"
                     ><img
-                      src="theme/frontend/images/youtube.png"
+                      src="theme/frontend/images/address.png"
                       alt=""
                       class="mr-2 flex-shrink-0"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-            <div class="w-1/2 xl:w-[15%] xl:mr-10 px-2 mb-4 lg:mb-0">
-              <p
-                class="title font-semibold text-[18px] mb-7 uppercase text-[#fff]"
-              >
-                Link nhanh
-              </p>
-              <div class="nav-footer">
-                <ul>
-                  <li><a href="#" title="Trang chủ">Trang chủ</a></li>
-                  <li><a href="#" title="Giới thiệu">Giới thiệu</a></li>
-                  <li><a href="#" title="Bán đất">Bán đất</a></li>
-                  <li><a href="#" title="Tin tức">Tin tức</a></li>
-                  <li><a href="#" title="Liên hệ">Liên hệ</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="w-1/2 xl:w-1/5 px-2 mb-4 lg:mb-0">
-              <p
-                class="title font-semibold text-[18px] mb-7 uppercase text-[#fff]"
-              >
-                Chính sách
-              </p>
-              <div class="nav-footer">
-                <ul>
-                  <li>
-                    <a href="#" title="Chính sách & Quy định"
-                      >Chính sách & Quy định</a
-                    >
+                    />
+                    <span class="font-medium"
+                      >19/68 Lưu Hữu Phước, Mỹ Đình 1, Nam Từ Liêm, Hà Nội</span
+                    ></a
+                  >
+                </div>
+                <ul class="f-contact social-footer mb-4 last:mb-0 flex">
+                  <li class="mr-6 last:mr-0">
+                    <a href="#" class=""
+                      ><img
+                        src="theme/frontend/images/fb.png"
+                        alt=""
+                        class="mr-2 flex-shrink-0"
+                    /></a>
                   </li>
-                  <li>
-                    <a href="#" title="Chính sách & Quy định"
-                      >Chính sách & Quy định</a
-                    >
+                  <li class="mr-6 last:mr-0">
+                    <a href="#"
+                      ><img
+                        src="theme/frontend/images/tiktok.png"
+                        alt=""
+                        class="mr-2 flex-shrink-0"
+                    /></a>
                   </li>
-                  <li>
-                    <a href="#" title="Chính sách & Quy định"
-                      >Chính sách & Quy định</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" title="Chính sách & Quy định"
-                      >Chính sách & Quy định</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" title="Chính sách & Quy định"
-                      >Chính sách & Quy định</a
-                    >
+                  <li class="mr-6 last:mr-0">
+                    <a href="#"
+                      ><img
+                        src="theme/frontend/images/youtube.png"
+                        alt=""
+                        class="mr-2 flex-shrink-0"
+                    /></a>
                   </li>
                 </ul>
               </div>
-            </div>
-          </div>
-          <div class="copyright mt-10">
-            <p class="text-[#fff] text-[14px]">
-              Copyright © 2023 DatnenLaoCai. All rights reserved. Designed and
-              developed by Tech5S
-            </p>
-          </div>
-        </div>
-        <div class="form-footer flex-[1]">
-          <div class="bg-[#fff]">
-            <form action="">
-              <div class="content-form-footer">
-                <div class="title-form dp:pt-9 dp:px-20 mb-6">
-                  <h3
-                    class="title text-center text-[#252525] uppercase mb-2 font-bold dp:text-[28px]"
-                  >
-                    tư vấn miễn phí
-                  </h3>
-                  <p class="font-medium text-center text-[#454545]">
-                    Quý khách vui lòng điền thông tin để nhận được tư vấn miễn
-                    phí sớm nhất từ Đất Nền Lào Cai
-                  </p>
-                </div>
-                <div class="input-form flex flex-wrap">
-                  <div class="form-group w-full md:w-1/2 p-3">
-                    <label class="text-[#252525] font-bold" for="name"
-                      >Họ và tên
-                      <strong class="text-[#FF0000]">*</strong></label
-                    >
-                    <input
-                      type="text"
-                      name="fullname"
-                      placeholder="Nhập..."
-                      class="placeholder-[#888888] bg-[#f5f5f5] w-full mt-2 p-4"
-                    />
-                  </div>
-                  <div class="form-group w-full md:w-1/2 p-3">
-                    <label class="text-[#252525] font-bold" for="number-phone"
-                      >Số điện thoại<strong class="text-[#FF0000]"
-                        >*</strong
-                      ></label
-                    >
-                    <input
-                      type="tel"
-                      name="fullname"
-                      placeholder="Nhập..."
-                      class="placeholder-[#888888] bg-[#f5f5f5] w-full mt-2 p-4"
-                    />
-                  </div>
-                  <div class="form-group w-full md:w-1/2 p-3">
-                    <label class="text-[#252525] font-bold" for="email"
-                      >Email</label
-                    >
-                    <input
-                      type="text"
-                      name="fullname"
-                      placeholder="Nhập..."
-                      class="placeholder-[#888888] bg-[#f5f5f5] w-full mt-2 p-4"
-                    />
-                  </div>
-                  <div class="form-group w-full md:w-1/2 p-3">
-                    <label class="text-[#252525] font-bold" for=""
-                      >Khu vực cần tư vấn<strong class="text-[#FF0000]"
-                        >*</strong
-                      ></label
-                    >
-                    <select
-                      name="area"
-                      id=""
-                      class="bg-[#f5f5f5] w-full mt-2 p-4"
-                    >
-                      <option value="1">Khu vực 1</option>
-                      <option value="2">Khu vực 2</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="btn-form-footer flex justify-center mt-8">
-                  <button
-                    class="text-white btn-more px-[22px] text-[18px] flex items-center py-3"
-                  >
-                    <span class="mr-2">Xem Tất Cả </span
-                    ><i class="fa-solid fa-arrow-right"></i>
-                  </button>
+              <div class="w-2/5 md:w-1/4 lg:w-1/4 xl:w-1/4 px-3 md:px-6 2xl:px-12 mb-4 lg:mb-0">
+                <p
+                  class="title font-semibold text-[18px] mb-7 uppercase text-[#fff]"
+                >
+                  Link nhanh
+                </p>
+                <div class="nav-footer">
+                  <ul>
+                    <li><a href="#" title="Trang chủ">Trang chủ</a></li>
+                    <li><a href="#" title="Giới thiệu">Giới thiệu</a></li>
+                    <li><a href="#" title="Bán đất">Bán đất</a></li>
+                    <li><a href="#" title="Tin tức">Tin tức</a></li>
+                    <li><a href="#" title="Liên hệ">Liên hệ</a></li>
+                  </ul>
                 </div>
               </div>
-            </form>
+              <div class="w-3/5 md:w-1/3 lg:w-1/3 xl:w-1/3 px-3 md:px-6 2xl:px-12 mb-4 lg:mb-0">
+                <p
+                  class="title font-semibold text-[18px] mb-7 uppercase text-[#fff]"
+                >
+                  Chính sách
+                </p>
+                <div class="nav-footer">
+                  <ul>
+                    <li>
+                      <a href="#" title="Chính sách & Quy định"
+                        >Chính sách & Quy định</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" title="Chính sách & Quy định"
+                        >Chính sách & Quy định</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" title="Chính sách & Quy định"
+                        >Chính sách & Quy định</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" title="Chính sách & Quy định"
+                        >Chính sách & Quy định</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" title="Chính sách & Quy định"
+                        >Chính sách & Quy định</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="copyright mt-10">
+              <p class="text-[#fff] text-[14px]">
+                Copyright © 2023 DatnenLaoCai. All rights reserved. Designed and
+                developed by Tech5S
+              </p>
+            </div>
+          </div>
+          <div class="form-footer order-1 xl:order-2 w-full xl:w-2/5 xl:px-12 mt-4 xl:-mt-28 flex">
+            <div class="bg-[#fff] form">
+              <form action="">
+                <div class="content-form-footer py-6 xl:py-8 2xl:py-10 dp:py-14">
+                  <div class="title-form px-4 lg:px-8 xl:px-12 2xl:px-16 dp:px-20 mb-6">
+                    <h3
+                      class="title text-center text-[#252525] uppercase mb-2 font-bold dp:text-[28px]"
+                    >
+                      tư vấn miễn phí
+                    </h3>
+                    <p class="font-medium text-center text-[#454545]">
+                      Quý khách vui lòng điền thông tin để nhận được tư vấn miễn
+                      phí sớm nhất từ Đất Nền Lào Cai
+                    </p>
+                  </div>
+                  <div class="input-form flex flex-wrap px-3">
+                    <div class="form-group w-full md:w-1/2 p-3">
+                      <label class="text-[#252525] font-bold" for="name"
+                        >Họ và tên
+                        <strong class="text-[#FF0000]">*</strong></label
+                      >
+                      <input
+                        type="text"
+                        name="fullname"
+                        placeholder="Nhập..."
+                        class="placeholder-[#888888] bg-[#f5f5f5] w-full mt-2 p-4"
+                      />
+                    </div>
+                    <div class="form-group w-full md:w-1/2 p-3">
+                      <label class="text-[#252525] font-bold" for="number-phone"
+                        >Số điện thoại<strong class="text-[#FF0000]"
+                          >*</strong
+                        ></label
+                      >
+                      <input
+                        type="tel"
+                        name="fullname"
+                        placeholder="Nhập..."
+                        class="placeholder-[#888888] bg-[#f5f5f5] w-full mt-2 p-4"
+                      />
+                    </div>
+                    <div class="form-group w-full md:w-1/2 p-3">
+                      <label class="text-[#252525] font-bold" for="email"
+                        >Email</label
+                      >
+                      <input
+                        type="text"
+                        name="fullname"
+                        placeholder="Nhập..."
+                        class="placeholder-[#888888] bg-[#f5f5f5] w-full mt-2 p-4"
+                      />
+                    </div>
+                    <div class="form-group w-full md:w-1/2 p-3">
+                      <label class="text-[#252525] font-bold" for=""
+                        >Khu vực cần tư vấn<strong class="text-[#FF0000]"
+                          >*</strong
+                        ></label
+                      >
+                      <select
+                        name="area"
+                        id=""
+                        class="bg-[#f5f5f5] w-full mt-2 p-4"
+                      >
+                        <option value="1">Khu vực 1</option>
+                        <option value="2">Khu vực 2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="btn-form-footer flex justify-center mt-8">
+                    <button
+                      class="text-white btn-more px-[22px] text-[18px] flex items-center py-3"
+                    >
+                      <span class="mr-2">Xem Tất Cả </span
+                      ><i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <script src="theme/frontend/js/swiper-bundle.min.js"></script>
     <script src="theme/frontend/js/main.js"></script>
+
   </body>
 </html>
