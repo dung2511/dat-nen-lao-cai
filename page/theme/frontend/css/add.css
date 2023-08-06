@@ -194,3 +194,29 @@ body {
 .breadcumb li{
   margin-right: 8px;
 }
+.section-advantage .item-advantage {
+  padding: 40px 40px 32px;
+  color: #fff;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.section-advantage .item-advantage img{
+  max-width: 68px;
+  max-height: 68px;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+  margin-bottom: 24px;
+}
+.section-extension {
+  background-size: 100% 100%;
+}
+.section-extension .item-extension img{
+  max-width: 68px;
+  max-height: 68px;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
