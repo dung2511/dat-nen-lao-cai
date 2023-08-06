@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="theme/frontend/css/style.css" />
     <link rel="stylesheet" href="theme/frontend/css/add.css" />
     <link rel="stylesheet" href="theme/frontend/css/fontawesome.css" />
+    <link rel="stylesheet" href="theme/frontend/css/swiper-bundle.min.css" />
     <title>Landing Page</title>
   </head>
   <body>
@@ -33,9 +34,9 @@
       class="section-introduce lg:bg-[url('../images/bg-section-intro.png')] py-8 xl:py-10 2xl:py-16 dp:py-[76px] bg-no-repeat bg-right-top"
     >
       <div class="container mx-auto px-2.5 lg:px-8 2xl:px-32 xl:px-16 dp:px-64">
-        <div class="flex flex-wrap justify-between">
+        <div class="flex flex-wrap justify-between lg:-mx-7">
           <div
-            class="title mb-10 lg:mb-0 flex-[0_0_100%] max-w-full lg:flex-[0_0_48%] lg:max-w-[50%]"
+            class="title mb-10 lg:mb-0 w-full lg:w-1/2 lg:px-7"
           >
             <h2 class="dp:text-[36px] font-semibold capitalize relative pb-4">
               <span>Giới thiệu về Huyện</span>
@@ -57,7 +58,7 @@
             </p>
           </div>
           <div
-            class="flex-[0_0_100%] max-w-full lg:flex-[0_0_48%] lg:max-w-[50%]"
+            class="w-full lg:w-1/2 lg:px-7"
           >
             <img
               src="theme/frontend/images/images-intro.png"
@@ -84,23 +85,8 @@
             egestas sem malesuada pellentesque.
           </p>
         </div>
-        <div class="list-advantage flex flex-wrap items-stretch mt-10">
-          <div class="w-full mb-4 md:w-1/2 lg:w-1/3 px-2">
-            <div class="item-advantage bg-[url('../images/bg-item-advantage.png')]"
-            >
-              <img src="theme/frontend/images/advantage-1.png" alt="" />
-              <p class="title-item font-semibold text-[20px] capitalize">
-                Hỗ trợ, tư vấn nhiệt tình
-              </p>
-              <div class="short-content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Duis et odio egestas
-                  sem malesuada pellentesque lacus id auctor in euism.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full mb-4 md:w-1/2 lg:w-1/3 px-2">
+        <div class="list-advantage flex flex-wrap items-stretch mt-10 -mx-4">
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4">
             <div
               class="item-advantage bg-[url('../images/bg-item-advantage.png')]"
             >
@@ -116,7 +102,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full mb-4 md:w-1/2 lg:w-1/3 px-2">
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4">
             <div
               class="item-advantage bg-[url('../images/bg-item-advantage.png')]"
             >
@@ -132,22 +118,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full mb-4 md:w-1/2 lg:w-1/3 px-2">
-            <div class="item-advantage bg-[url('../images/bg-item-advantage.png')]"
-            >
-              <img src="theme/frontend/images/advantage-1.png" alt="" />
-              <p class="title-item font-semibold text-[20px] capitalize">
-                Hỗ trợ, tư vấn nhiệt tình
-              </p>
-              <div class="short-content">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Duis et odio egestas
-                  sem malesuada pellentesque lacus id auctor in euism.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full mb-4 md:w-1/2 lg:w-1/3 px-2">
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4">
             <div
               class="item-advantage bg-[url('../images/bg-item-advantage.png')]"
             >
@@ -163,7 +134,39 @@
               </div>
             </div>
           </div>
-          <div class="w-full mb-4 md:w-1/2 lg:w-1/3 px-2">
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+            <div
+              class="item-advantage bg-[url('../images/bg-item-advantage.png')]"
+            >
+              <img src="theme/frontend/images/advantage-1.png" alt="" />
+              <p class="title-item font-semibold text-[20px] capitalize">
+                Hỗ trợ, tư vấn nhiệt tình
+              </p>
+              <div class="short-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Duis et odio egestas
+                  sem malesuada pellentesque lacus id auctor in euism.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+            <div
+              class="item-advantage bg-[url('../images/bg-item-advantage.png')]"
+            >
+              <img src="theme/frontend/images/advantage-1.png" alt="" />
+              <p class="title-item font-semibold text-[20px] capitalize">
+                Hỗ trợ, tư vấn nhiệt tình
+              </p>
+              <div class="short-content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Duis et odio egestas
+                  sem malesuada pellentesque lacus id auctor in euism.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 lg:w-1/3 p-4">
             <div
               class="item-advantage bg-[url('../images/bg-item-advantage.png')]"
             >
@@ -182,58 +185,339 @@
         </div>
       </div>
     </section>
-    <section class="section-extension mt-20 bg-[url('../images/bg-extension.png')] bg-no-repeat">
+    <section
+      class="section-extension mt-20 bg-[url('../images/bg-extension.png')] bg-no-repeat"
+    >
       <div class="container mx-auto px-2.5 lg:px-8 2xl:px-32 xl:px-16 dp:px-64">
         <div class="title pt-20">
-          <h2 class="font-semibold text-[36px] text-white capitalize text-center">
+          <h2
+            class="font-semibold text-[36px] text-white capitalize text-center"
+          >
             <span>Các tiện ích của vị trí địa lý</span>
           </h2>
         </div>
-        <div class="list-extenstion flex flex-wrap items-stretch justify-around text-[#fff] mt-14">
+        <div
+          class="list-extenstion flex flex-wrap items-stretch justify-around text-[#fff] mt-14 -mx-1"
+        >
           <div class="w-1/2 md:w-1/3 lg:w-1/4 sm:px-2 px-1 sm:mb-12 mb-6">
             <div class="item-extension">
-              <img src="theme/frontend/images/advantage-1.png" alt="">
-              <p class="font-semibold text-[20px] text-center">Hỗ trợ, tư vấn nhiệt tình</p>
+              <img src="theme/frontend/images/advantage-1.png" alt="" />
+              <p class="font-semibold text-[20px] text-center">
+                Hỗ trợ, tư vấn nhiệt tình
+              </p>
             </div>
           </div>
           <div class="w-1/2 md:w-1/3 lg:w-1/4 sm:px-2 px-1 sm:mb-12 mb-6">
             <div class="item-extension">
-              <img src="theme/frontend/images/advantage-1.png" alt="">
-              <p class="font-semibold text-[20px] text-center">Hỗ trợ, tư vấn nhiệt tình</p>
+              <img src="theme/frontend/images/advantage-1.png" alt="" />
+              <p class="font-semibold text-[20px] text-center">
+                Hỗ trợ, tư vấn nhiệt tình
+              </p>
             </div>
           </div>
           <div class="w-1/2 md:w-1/3 lg:w-1/4 sm:px-2 px-1 sm:mb-12 mb-6">
             <div class="item-extension">
-              <img src="theme/frontend/images/advantage-1.png" alt="">
-              <p class="font-semibold text-[20px] text-center">Hỗ trợ, tư vấn nhiệt tình</p>
+              <img src="theme/frontend/images/advantage-1.png" alt="" />
+              <p class="font-semibold text-[20px] text-center">
+                Hỗ trợ, tư vấn nhiệt tình
+              </p>
             </div>
           </div>
           <div class="w-1/2 md:w-1/3 lg:w-1/4 sm:px-2 px-1 sm:mb-12 mb-6">
             <div class="item-extension">
-              <img src="theme/frontend/images/advantage-1.png" alt="">
-              <p class="font-semibold text-[20px] text-center">Hỗ trợ, tư vấn nhiệt tình</p>
+              <img src="theme/frontend/images/advantage-1.png" alt="" />
+              <p class="font-semibold text-[20px] text-center">
+                Hỗ trợ, tư vấn nhiệt tình
+              </p>
             </div>
           </div>
           <div class="w-1/2 md:w-1/3 lg:w-1/4 sm:px-2 px-1 sm:mb-12 mb-6">
             <div class="item-extension">
-              <img src="theme/frontend/images/advantage-1.png" alt="">
-              <p class="font-semibold text-[20px] text-center">Hỗ trợ, tư vấn nhiệt tình</p>
+              <img src="theme/frontend/images/advantage-1.png" alt="" />
+              <p class="font-semibold text-[20px] text-center">
+                Hỗ trợ, tư vấn nhiệt tình
+              </p>
             </div>
           </div>
           <div class="w-1/2 md:w-1/3 lg:w-1/4 sm:px-2 px-1 sm:mb-12 mb-6">
             <div class="item-extension">
-              <img src="theme/frontend/images/advantage-1.png" alt="">
-              <p class="font-semibold text-[20px] text-center">Hỗ trợ, tư vấn nhiệt tình</p>
+              <img src="theme/frontend/images/advantage-1.png" alt="" />
+              <p class="font-semibold text-[20px] text-center">
+                Hỗ trợ, tư vấn nhiệt tình
+              </p>
             </div>
           </div>
           <div class="w-1/2 md:w-1/3 lg:w-1/4 sm:px-2 px-1 sm:mb-12 mb-6">
             <div class="item-extension">
-              <img src="theme/frontend/images/advantage-1.png" alt="">
-              <p class="font-semibold text-[20px] text-center">Hỗ trợ, tư vấn nhiệt tình</p>
+              <img src="theme/frontend/images/advantage-1.png" alt="" />
+              <p class="font-semibold text-[20px] text-center">
+                Hỗ trợ, tư vấn nhiệt tình
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="section-sale-landing mt-20">
+      <div class="container mx-auto px-2.5 lg:px-8 2xl:px-32 xl:px-16 dp:px-64">
+        <div class="title">
+          <h2
+            class="font-semibold text-[36px] text-center text-[#252525] capitalize"
+          >
+            <span> Các lô đất nền đang bán </span>
+          </h2>
+        </div>
+        <div class="list-sale-landing mt-10">
+          <div class="item-landing flex flex-wrap lg:-mx-7 items-center mb-14">
+            <div class="images img_full w-full lg:w-1/2 lg:px-7 mb-4 lg:mb-0">
+              <div class="swiper swiper-images-landing">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing-2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing-3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing-4.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing-5.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing-6.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 lg:px-7">
+              <h3 class="font-semibold text-[24px] text-[#252525] uppercase">
+                <span
+                  >CHÍNH CHỦ CẦN BÁN LÔ ĐẤT SIÊU ĐẮC ĐỊA, ĐẦY TIỀM NĂNG PHÁT
+                  TRIỂN</span
+                >
+              </h3>
+              <div class="details-landing mt-6">
+                <p class="flex mb-4">
+                  <span class="mr-2"
+                    ><img
+                      src="theme/frontend/images/icon-dt.png"
+                      alt="" /></span
+                  ><span
+                    ><strong class="font-semibold mr-1"
+                      >Diện tích:</strong
+                    >32m (1130m2 đất nông nghiệp )</span
+                  >
+                </p>
+                <p class="flex mb-4">
+                  <span class="mr-2"
+                    ><img
+                      src="theme/frontend/images/icon-price.png"
+                      alt="" /></span
+                  ><span class="text-[#252525]"
+                    ><strong class="font-semibold mr-1"
+                      >Giá dự kiến:</strong
+                    >11tỷ300</span
+                  >
+                </p>
+                <p class="flex mb-4">
+                  <span class="mr-2"
+                    ><img
+                      src="theme/frontend/images/icon-legal.png"
+                      alt="" /></span
+                  ><span
+                    ><strong class="font-semibold mr-1"
+                      >Pháp lý:</strong
+                    >Bìa đỏ chính chủ giao dịch ngay</span
+                  >
+                </p>
+                <p class="flex mb-4">
+                  <span class="mr-2"
+                    ><img
+                      src="theme/frontend/images/icon-address.png"
+                      alt="" /></span
+                  ><span
+                    ><strong class="font-semibold mr-1"
+                      >Vị trí:</strong
+                    >Nằm trên tuyến Đường Violet ,Sát khách sạn Pao ,cách cap treo 500m, view thung lũng nhìn xuống bản Cát Cát Mường Hoa, kết nối với mọi tiện ích...</span
+                  >
+                </p>
+                <p class="flex mb-4">
+                  <span class="mr-2"
+                    ><img
+                      src="theme/frontend/images/icon-description.png"
+                      alt="" /></span
+                  ><span
+                    ><strong class="font-semibold mr-1"
+                      >Mô tả:</strong
+                    >Lorem ipsum dolor sit amet consectetur. Duis et odio egestas sem malesuada pellentesque. Lacus id auctor in euismod laoreet sit lobortis. Purus nulla dolor dictum curabitur. Eget tortor nulla odio quis at nec. Lorem ipsum dolor sit amet consectetur. Duis et odio egestas sem malesuada pellentesque.</span
+                  >
+                </p>
+              </div>
+              <div class="2xl:mt-8 mt-6 flex flex-wrap">
+                <a href="#" class="text-white btn-call px-[22px] text-[18px] flex items-center py-3 mr-6 mb-3 xl:mb-0">
+                  <img src="theme/frontend/images/icon-call.png" alt="" class="mr-2">
+                  <span class="capitalize font-semibold text-[18px]">Gọi ngay hotline</span></a>
+                  <a href="#" class="text-white btn-advise px-[22px] text-[18px] flex items-center py-3">
+                    <img src="theme/frontend/images/icon-advise.png" alt="" class="mr-2">
+                    <span class="capitalize font-semibold text-[18px]">Đăng ký tư vấn</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="item-landing flex flex-wrap lg:-mx-7 items-center mb-14">
+            <div class="images img_full w-full lg:w-1/2 lg:px-7 mb-4 lg:mb-0">
+              <div class="swiper swiper-images-landing">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing-2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing-3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing-4.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing-5.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing-6.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="theme/frontend/images/img-sale-landing.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full lg:w-1/2 lg:px-7">
+              <h3 class="font-semibold text-[24px] text-[#252525] uppercase">
+                <span
+                  >CHÍNH CHỦ CẦN BÁN LÔ ĐẤT SIÊU ĐẮC ĐỊA, ĐẦY TIỀM NĂNG PHÁT
+                  TRIỂN</span
+                >
+              </h3>
+              <div class="details-landing mt-6">
+                <p class="flex mb-4">
+                  <span class="mr-2"
+                    ><img
+                      src="theme/frontend/images/icon-dt.png"
+                      alt="" /></span
+                  ><span
+                    ><strong class="font-semibold mr-1"
+                      >Diện tích:</strong
+                    >32m (1130m2 đất nông nghiệp )</span
+                  >
+                </p>
+                <p class="flex mb-4">
+                  <span class="mr-2"
+                    ><img
+                      src="theme/frontend/images/icon-price.png"
+                      alt="" /></span
+                  ><span
+                    ><strong class="font-semibold mr-1"
+                      >Giá dự kiến:</strong
+                    >11tỷ300</span
+                  >
+                </p>
+                <p class="flex mb-4">
+                  <span class="mr-2"
+                    ><img
+                      src="theme/frontend/images/icon-legal.png"
+                      alt="" /></span
+                  ><span
+                    ><strong class="font-semibold mr-1"
+                      >Pháp lý:</strong
+                    >Bìa đỏ chính chủ giao dịch ngay</span
+                  >
+                </p>
+                <p class="flex mb-4">
+                  <span class="mr-2"
+                    ><img
+                      src="theme/frontend/images/icon-address.png"
+                      alt="" /></span
+                  ><span
+                    ><strong class="font-semibold mr-1"
+                      >Vị trí:</strong
+                    >Nằm trên tuyến Đường Violet ,Sát khách sạn Pao ,cách cap treo 500m, view thung lũng nhìn xuống bản Cát Cát Mường Hoa, kết nối với mọi tiện ích...</span
+                  >
+                </p>
+                <p class="flex mb-4">
+                  <span class="mr-2"
+                    ><img
+                      src="theme/frontend/images/icon-description.png"
+                      alt="" /></span
+                  ><span
+                    ><strong class="font-semibold mr-1"
+                      >Mô tả:</strong
+                    >Lorem ipsum dolor sit amet consectetur. Duis et odio egestas sem malesuada pellentesque. Lacus id auctor in euismod laoreet sit lobortis. Purus nulla dolor dictum curabitur. Eget tortor nulla odio quis at nec. Lorem ipsum dolor sit amet consectetur. Duis et odio egestas sem malesuada pellentesque.</span
+                  >
+                </p>
+              </div>
+              <div class="2xl:mt-8 mt-6 flex">
+                <a href="#" class="text-white btn-call px-[22px] text-[18px] flex items-center py-3 mr-6">
+                  <img src="theme/frontend/images/icon-call.png" alt="" class="mr-2">
+                  <span class="capitalize font-semibold text-[18px]">Gọi ngay hotline</span></a>
+                  <a href="#" class="text-white btn-advise px-[22px] text-[18px] flex items-center py-3">
+                    <img src="theme/frontend/images/icon-advise.png" alt="" class="mr-2">
+                    <span class="capitalize font-semibold text-[18px]">Đăng ký tư vấn</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="theme/frontend/js/swiper-bundle.min.js"></script>
+    <script src="theme/frontend/js/main.js"></script>
   </body>
 </html>

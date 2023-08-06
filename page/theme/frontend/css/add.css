@@ -80,6 +80,23 @@ body {
   border-image: linear-gradient(to right, #00a573, #008ede);
   border-image-slice: 1;
 }
+.btn-call {
+  background-image: linear-gradient(to right, #00a573, #008ede);
+  transition: 0.3s ease-in-out;
+  border: solid;
+  border-image: linear-gradient(to right, #00a573, #008ede);
+  border-image-slice: 1;
+}
+.btn-advise {
+  background: -webkit-linear-gradient(#00a573, #008ede);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.3s ease-in-out;
+  border: solid;
+  border-image: linear-gradient(to right, #00a573, #008ede);
+  border-image-slice: 1;
+}
 .btn-more:hover {
   background: -webkit-linear-gradient(#00a573, #008ede);
   background-clip: text;
@@ -128,7 +145,7 @@ body {
   transform: translateX(-50%);
 }
 .info-item {
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 100%);
 }
 .section-news .list-new__index .item-news .image .c-img {
   padding-top: 54%;
@@ -144,7 +161,7 @@ body {
 .item-news .c-img img {
   object-fit: cover;
 }
-.c-img img {
+.item-news .c-img img {
   position: absolute;
   top: 0;
   left: 0;
@@ -191,7 +208,7 @@ body {
 .breadcumb {
   display: flex;
 }
-.breadcumb li{
+.breadcumb li {
   margin-right: 8px;
 }
 .section-advantage .item-advantage {
@@ -201,7 +218,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.section-advantage .item-advantage img{
+.section-advantage .item-advantage img {
   max-width: 68px;
   max-height: 68px;
   object-fit: contain;
@@ -212,11 +229,55 @@ body {
 .section-extension {
   background-size: 100% 100%;
 }
-.section-extension .item-extension img{
+.section-extension .item-extension img {
   max-width: 68px;
   max-height: 68px;
   object-fit: contain;
   margin: auto;
   display: block;
   margin-bottom: 1rem;
+}
+.item-land-sale .img {
+  padding-top: 100%;
+}
+.item-land-sale .c-img .img-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.item-land-sale .c-img .img-pro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.section-sale-landing .item-landing .details-landing img {
+  display: inline-block;
+  max-width: 24px;
+  max-height: 24px;
+}
+.section-sale-landing .list-sale-landing .item-landing:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+.section-sale-landing .list-sale-landing .item-landing:nth-child(2n + 1) {
+  flex-direction: row;
+}
+.section-news .item-news img,
+.section-news .item-news {
+  transition: all 0.3s;
+}
+.section-news .item-news .btn-more-news {
+  transition: all 0.3s;
+}
+.section-news .item-news:hover img {
+  transform: scale(1.2);
+}
+.section-news .item-news:hover {
+  box-shadow: 8px 10px 48px rgba(0, 0, 0, 0.15);
+}
+.section-sale-landing .item-landing .images img {
+  width: 100%;
 }
