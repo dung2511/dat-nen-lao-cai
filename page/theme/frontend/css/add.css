@@ -288,9 +288,12 @@ body {
 .section-sale-landing .item-landing .images img {
   width: 100%;
 }
-.header .h-logo {
+.header .logo {
   background: #ffffff;
   clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+  width: calc((100% - 1227px) / 2 + 160px);
+  top: 0;
+  left: 0;
 }
 .header .h-logo img {
   max-width: 60%;
