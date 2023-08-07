@@ -342,7 +342,7 @@ body {
     height: 100%;
     overflow-y: auto;
     max-width: min(240px, 50%);
-    background: rgb(0, 99, 192);
+    background: #008ede;
     z-index: 100;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -350,6 +350,12 @@ body {
   }
   .header .menu-header .menu.active {
     left: 0;
+  }
+  .header .menu-header .menu.active ul li a{
+    color: #fff;
+    display: block;
+    padding: 10px 15px;
+    border-top: 1px solid #fff;
   }
   .over-lay.show {
     right: 0;

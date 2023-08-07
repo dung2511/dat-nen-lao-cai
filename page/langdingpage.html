@@ -10,6 +10,82 @@
     <title>Landing Page</title>
   </head>
   <body>
+    <header class="header header-index bg-[#FFFFFF33] relative">
+      <div class="">
+        <div class="logo absolute hidden lg:block lg:top-0 lg:left-0 h-full">
+          <a href="#" class="h-logo flex items-center justify-center h-full">
+            <img src="theme/frontend/images/logo-2.png" alt="" />
+          </a>
+        </div>
+        <div class="menu-header bg-[#fff] lg:bg-transparent">
+          <div class="container mx-auto dp:px-64 xl:px-16 2xl:px-32 px-3">
+            <div class="sm:flex justify-between">
+              <div class="flex lg:hidden justify-between items-center">
+                <span class="icon-menu"><i class="fa-solid fa-bars"></i></span>
+                <div class="flex items-center h-full">
+                  <a
+                    href="#"
+                    class="h-logo flex items-center justify-center bg-[#fff] py-3"
+                  >
+                    <img src="theme/frontend/images/logo-2.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="menu lg:flex justify-center flex-1">
+                <a
+                href="#"
+                class="h-logo flex items-center justify-center bg-[#fff] py-3 lg:hidden"
+              >
+                <img src="theme/frontend/images/logo-2.png" alt="" />
+              </a>
+                <ul>
+                  <li>
+                    <a href="#">Trang chủ</a>
+                  </li>
+                  <li>
+                    <a href="#">Bán đất</a>
+                  </li>
+                  <li>
+                    <a href="#">Tin tức</a>
+                  </li>
+                  <li>
+                    <a href="#">Liên hệ</a>
+                  </li>
+                </ul>
+                <div class="mx-6 flex items-center">
+                  <span>
+                    <i
+                      class="fa-solid fa-magnifying-glass"
+                      style="color: #ffffff"
+                    ></i>
+                  </span>
+                </div>
+              </div>
+              <div class="hotline hidden sm:block py-5 2xl:py-7 dp:py-9">
+                <a href="tel:0935363986" class="flex items-center bg-[#ffffff]">
+                  <div class="icon-hotline mx-2">
+                    <img src="theme/frontend/images/icon-hotline.svg" alt="" />
+                  </div>
+                  <div class="number-phone mx-2">
+                    <p class="text-[12px] font-semibold">
+                      <span>Hotline</span>
+                    </p>
+                    <p
+                      class="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#00A573] to-[#008EDE]"
+                    >
+                      <span>0935 363 986</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="over-lay fixed lg:hidden block w-full h-full bg-[rgba(0,0,0,.7)] top-0 right-[-100%] z-50 transition-all duration-300"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <section class="breadcrumb-area relative">
       <img src="theme/frontend/images/bg-banner-langdingpage.png" alt="" />
       <div
@@ -66,6 +142,70 @@
               class="w-full"
             />
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-map relative">
+      <div id="map" data-map="">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9701465857743!2d105.76282559372875!3d21.033880479022375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454d31c655555%3A0xee720f73c8f7985f!2zTOG6rXAgdHLDrG5oIHBo4bqnbiBt4buBbSB2w6AgV2Vic2l0ZSBjYW8gY-G6pXAh!5e0!3m2!1sen!2s!4v1660613041484!5m2!1sen!2s" width="100%" height="550" style="border: 0px; pointer-events: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="container mx-auto dp:px-64 2xl:px-32 xl:px-16 lg:px-8 px-3 absolute left-0 top-1/2 -translate-y-1/2">
+        <div class="bg-[#fff] form max-w-xl">
+          <form action="">
+            <div
+              class="content-form-footer py-6 xl:py-8 2xl:py-10 dp:py-14"
+            >
+              <div
+                class="title-form px-4 mb-6"
+              >
+                <h3
+                  class="title text-center text-[#252525] uppercase mb-2 font-bold dp:text-[28px]"
+                >
+                  tư vấn miễn phí
+                </h3>
+                <p class="font-medium text-center text-[#454545]">
+                  Quý khách vui lòng điền thông tin để nhận được tư vấn miễn
+                  phí sớm nhất từ Đất Nền Lào Cai
+                </p>
+              </div>
+              <div class="input-form flex flex-wrap px-3">
+                <div class="form-group w-full md:w-1/2 p-3">
+                  <label class="text-[#252525] font-bold" for="name"
+                    >Họ và tên
+                    <strong class="text-[#FF0000]">*</strong></label
+                  >
+                  <input
+                    type="text"
+                    name="fullname"
+                    placeholder="Nhập..."
+                    class="placeholder-[#888888] bg-[#f5f5f5] w-full mt-2 p-4"
+                  />
+                </div>
+                <div class="form-group w-full md:w-1/2 p-3">
+                  <label class="text-[#252525] font-bold" for="number-phone"
+                    >Số điện thoại<strong class="text-[#FF0000]"
+                      >*</strong
+                    ></label
+                  >
+                  <input
+                    type="tel"
+                    name="fullname"
+                    placeholder="Nhập..."
+                    class="placeholder-[#888888] bg-[#f5f5f5] w-full mt-2 p-4"
+                  />
+                </div>
+              </div>
+              <div class="btn-form-footer flex justify-center mt-8">
+                <button
+                  class="text-white btn-more px-[22px] text-[18px] flex items-center py-3"
+                >
+                  <span class="mr-2 capitalize font-semibold"
+                    >Tư vấn ngay</span
+                  ><i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </section>

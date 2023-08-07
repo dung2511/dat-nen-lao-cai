@@ -23,6 +23,9 @@ var PROGRAM = (function () {
       slidesPerView: "auto",
       spaceBetween: 16,
       breakpoints: {
+        1024: {
+          slidesPerView:4
+        },
         768: {
           slidesPerView: 3,
         },
