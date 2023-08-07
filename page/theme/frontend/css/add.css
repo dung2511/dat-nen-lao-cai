@@ -420,15 +420,34 @@ label.star:before {
 .social-footer li:hover {
   background-image: linear-gradient(to right, #00a573, #008ede);
 }
-.nav-footer ul li a{
-  transition: all .3s;
+.nav-footer ul li a {
+  transition: all 0.3s;
 }
 .nav-footer ul li:hover a {
   color: #00a573;
 }
 .plugin-more {
   position: fixed;
-  top: 50%;
+  bottom: 0;
   right: 32px;
-  z-index:9999;
+  z-index: 9999;
+}
+.modal-register {
+  display: none;
+}
+.modal-register.active {
+  display: block;
+}
+.list-post-m .item-post h3 {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  -webkit-line-clamp: 2;
+  height: 44px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.bg-banner-home img {
+  width: 100%;
 }
