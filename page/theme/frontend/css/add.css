@@ -23,12 +23,12 @@
 }
 :root,
 :host {
-  --fa-style-family-classic: "Font Awesome 6 Free";
-  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+  --fa-style-family-classic: "Font Awesome 6";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6";
 }
 
 @font-face {
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 6";
   font-style: normal;
   font-weight: 400;
   font-display: block;
@@ -122,9 +122,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.section-sale_home .item-land-sale .decor-sale-land img {
-  transition: all 0.3s;
-}
+.section-sale_home .item-land-sale .decor-sale-land img,
 .section-sale_home .item-land-sale .img-sale img {
   transition: all 0.3s;
 }
@@ -147,9 +145,11 @@ body {
 .info-item {
   clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 100%);
 }
-.section-news .list-new__index .item-news .image .c-img {
+.section-news .list-new__index .item-news .image .c-img,
+.section-post-relate .list-new__index .item-news .image .c-img {
   padding-top: 54%;
 }
+
 .c-img {
   display: block;
   position: relative;
@@ -182,10 +182,12 @@ body {
   -webkit-line-clamp: 3;
 }
 .section-news .list-new__index .item-news,
-.section-news .box-news-latest {
+.section-news .box-news-latest,
+.section-post-relate .list-new__index .item-news {
   border: 1px solid #ebebeb;
 }
-.section-news .list-new__index .news-content {
+.section-news .list-new__index .news-content,
+.section-post-relate .list-new__index .news-content {
   padding: 16px 24px 20px;
 }
 .section-news .box-news-latest .list-post-m::-webkit-scrollbar {
@@ -273,16 +275,20 @@ body {
   flex-direction: row;
 }
 .section-news .item-news img,
-.section-news .item-news {
+.section-news .item-news,
+.section-post-relate .item-news img,
+.section-post-relate .item-news {
   transition: all 0.3s;
 }
 .section-news .item-news .btn-more-news {
   transition: all 0.3s;
 }
-.section-news .item-news:hover img {
+.section-news .item-news:hover img,
+.section-post-relate .item-news:hover img {
   transform: scale(1.2);
 }
-.section-news .item-news:hover {
+.section-news .item-news:hover,
+.section-post-relate .item-news:hover {
   box-shadow: 8px 10px 48px rgba(0, 0, 0, 0.15);
 }
 .section-sale-landing .item-landing .images img {
@@ -351,7 +357,7 @@ body {
   .header .menu-header .menu.active {
     left: 0;
   }
-  .header .menu-header .menu.active ul li a{
+  .header .menu-header .menu.active ul li a {
     color: #fff;
     display: block;
     padding: 10px 15px;
@@ -359,5 +365,70 @@ body {
   }
   .over-lay.show {
     right: 0;
+  }
 }
+.section-news .box-news-latest,
+.section-detail_news .box-news-latest {
+  box-shadow: 6px 8px 48px rgba(0, 0, 0, 0.1);
+}
+.section-detail_news .tag-post .title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-image: linear-gradient(to right, #00a573, #008ede);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+label.star:before {
+  color: #888888;
+  content: "\f005";
+  font-size: 20px;
+  font-family: "Font Awesome 6 Free";
+}
+.section-contact .form {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+.section-contact .f-contact strong {
+  background: -webkit-linear-gradient(#00a573, #008ede);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 4px;
+}
+.section-news .item-news:hover .btn-find-more,
+.section-news .item-news .btn-find-more span,
+.section-sale_home .item-land-sale .view-detail span,
+.btn-more span {
+  transition: all 0.3s;
+}
+.section-news .item-news:hover .btn-find-more {
+  background: -webkit-linear-gradient(#00a573, #008ede);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.section-news .item-news:hover .btn-find-more span {
+  margin-right: 1rem;
+}
+.section-sale_home .item-land-sale:hover .view-detail span {
+  margin-right: 1rem;
+}
+.btn-more:hover span {
+  margin-right: 1rem;
+}
+.social-footer li:hover {
+  background-image: linear-gradient(to right, #00a573, #008ede);
+}
+.nav-footer ul li a{
+  transition: all .3s;
+}
+.nav-footer ul li:hover a {
+  color: #00a573;
+}
+.plugin-more {
+  position: fixed;
+  top: 50%;
+  right: 32px;
+  z-index:9999;
 }

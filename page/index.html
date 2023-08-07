@@ -92,7 +92,7 @@
           <img src="theme/frontend/images/banner-home.png" alt="" />
         </div>
         <div
-          class="container dp:px-64 mx-auto 2xl:px-32 xl:px-16 absolute top-1/2 left-1/2 xl:left-0 -translate-x-1/2 -translate-y-1/2 xl:translate-y-0 px-2.5 lg:px-8"
+          class="container dp:px-64 mx-auto 2xl:px-32 xl:px-16 absolute top-1/2 left-1/2 xl:left-0 -translate-x-1/2 -translate-y-1/2 xl:translate-x-0 px-2.5 lg:px-8"
         >
           <div class="xl:w-1/2 w-full">
             <div class="title text-white text-center xl:text-left">
@@ -135,7 +135,7 @@
             >
               <span>Giới thiệu về tỉnh lào cai</span>
             </h2>
-            <p class="xl:text-[18px] mt-6">
+            <p class="xl:text-[18px] mt-6 text-justify">
               <span
                 >Lorem ipsum dolor sit amet consectetur. Duis et odio egestas
                 sem malesuada pellentesque. Lacus id auctor in euismod laoreet
@@ -207,8 +207,8 @@
                       <p><span>Tại Bảo Yên</span></p>
                     </div>
                     <div class="flex">
-                      <a href="#"
-                        ><span>Xem Chi Tiết</span>
+                      <a href="#" class="view-detail"
+                        ><span class="mr-2">Xem Chi Tiết</span>
                         <i class="fa-solid fa-arrow-right"></i
                       ></a>
                     </div>
@@ -239,8 +239,8 @@
                       <p><span>Tại Bảo Yên</span></p>
                     </div>
                     <div class="flex">
-                      <a href="#"
-                        ><span>Xem Chi Tiết</span>
+                      <a href="#" class="view-detail"
+                        ><span class="mr-2">Xem Chi Tiết</span>
                         <i class="fa-solid fa-arrow-right"></i
                       ></a>
                     </div>
@@ -271,8 +271,8 @@
                       <p><span>Tại Bảo Yên</span></p>
                     </div>
                     <div class="flex">
-                      <a href="#"
-                        ><span>Xem Chi Tiết</span>
+                      <a href="#" class="view-detail"
+                        ><span class="mr-2">Xem Chi Tiết</span>
                         <i class="fa-solid fa-arrow-right"></i
                       ></a>
                     </div>
@@ -303,8 +303,8 @@
                       <p><span>Tại Bảo Yên</span></p>
                     </div>
                     <div class="flex">
-                      <a href="#"
-                        ><span>Xem Chi Tiết</span>
+                      <a href="#" class="view-detail"
+                        ><span class="mr-2">Xem Chi Tiết</span>
                         <i class="fa-solid fa-arrow-right"></i
                       ></a>
                     </div>
@@ -317,7 +317,7 @@
       </div>
     </section>
     <section
-      class="section-news bg-[url('../images/bg-news.png')] md:bg-[length:100%] bg-no-repeat 2xl:mt-16 xl:mt-12 mt-8 dp:mt-20"
+      class="section-news bg-[url('../images/bg-news.png')] md:bg-[length:100%] bg-no-repeat 2xl:mt-16 xl:mt-12 mt-8 dp:mt-20 mb-14 xl:mb-40 2xl:mb-52 dp:mb-52"
     >
       <div class="container mx-auto px-2.5 lg:px-8 2xl:px-32 xl:px-16 dp:px-64">
         <div class="title pt-20">
@@ -362,8 +362,9 @@
                 </div>
                 <a
                   href="#"
-                  class="capitalize font-semibold text-[#252525] xl:text-[18px]"
-                  >Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i
+                  class="capitalize font-semibold text-[#252525] xl:text-[18px] btn-find-more"
+                  ><span class="mr-2">Tìm hiểu thêm</span>
+                  <i class="fa-solid fa-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -402,8 +403,9 @@
                 </div>
                 <a
                   href="#"
-                  class="capitalize font-semibold text-[#252525] xl:text-[18px]"
-                  >Tìm hiểu thêm <i class="fa-solid fa-arrow-right"></i
+                  class="capitalize font-semibold text-[#252525] xl:text-[18px] btn-find-more"
+                  ><span class="mr-2">Tìm hiểu thêm</span>
+                  <i class="fa-solid fa-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -605,7 +607,7 @@
             </div>
           </div>
         </div>
-        <div class="btn_more 2xl:mt-8 mt-6 flex justify-center">
+        <div class="2xl:mt-8 mt-6 flex justify-center">
           <a
             href="#"
             class="text-white btn-more px-[22px] text-[18px] flex items-center py-3"
@@ -616,7 +618,7 @@
       </div>
     </section>
     <footer
-      class="footer bg-[url('../images/bg-footer.png')] bg-no-repeat bg-[length:100%_100%] mt-14 xl:mt-40 2xl:mt-52 dp:mt-52"
+      class="footer bg-[url('../images/bg-footer.png')] bg-no-repeat bg-[length:100%_100%]"
     >
       <div class="container mx-auto dp:px-64 2xl:px-32 xl:px-16 lg:px-8 px-3">
         <div class="flex flex-wrap xl:-mx-12">
@@ -624,7 +626,7 @@
             class="main-footer order-2 xl:order-1 2xl:pt-14 xl:pt-10 pt-6 pb-4 w-full xl:w-3/5 xl:px-12"
           >
             <div
-              class="flex flex-wrap items-end -px-3 md:-px-6 2xl:-px-8 dp:-px-12"
+              class="flex flex-wrap items-end -mx-3 md:-mx-6 2xl:-mx-8 dp:-mx-12"
             >
               <div
                 class="w-full md:w-2/5 lg:w-2/5 xl:w-2/5 px-3 md:px-6 2xl:px-8 dp:px-12 mb-4 lg:mb-0"
@@ -648,7 +650,7 @@
                 </div>
                 <div class="f-contact mb-4 last:mb-0">
                   <a
-                    href="tel:0935 363 986"
+                    href="mailto:datnenlaocai@gmail.com"
                     class="text-[#fff] flex items-start"
                     ><img
                       src="theme/frontend/images/email.png"
@@ -659,42 +661,40 @@
                   >
                 </div>
                 <div class="f-contact mb-6 last:mb-0">
-                  <a
-                    href="tel:0935 363 986"
-                    class="text-[#fff] flex items-start"
-                    ><img
+                  <div class="text-[#fff] flex items-start">
+                    <img
                       src="theme/frontend/images/address.png"
                       alt=""
                       class="mr-2 flex-shrink-0"
                     />
                     <span class="font-medium"
                       >19/68 Lưu Hữu Phước, Mỹ Đình 1, Nam Từ Liêm, Hà Nội</span
-                    ></a
-                  >
+                    >
+                  </div>
                 </div>
                 <ul class="f-contact social-footer mb-4 last:mb-0 flex">
-                  <li class="mr-6 last:mr-0">
-                    <a href="#" class=""
+                  <li class="mr-6 last:mr-0 rounded">
+                    <a href="#"
                       ><img
                         src="theme/frontend/images/fb.png"
                         alt=""
-                        class="mr-2 flex-shrink-0"
+                        class="p-1"
                     /></a>
                   </li>
-                  <li class="mr-6 last:mr-0">
+                  <li class="mr-6 last:mr-0 rounded">
                     <a href="#"
                       ><img
                         src="theme/frontend/images/tiktok.png"
                         alt=""
-                        class="mr-2 flex-shrink-0"
+                        class="p-1"
                     /></a>
                   </li>
-                  <li class="mr-6 last:mr-0">
+                  <li class="mr-6 last:mr-0 rounded">
                     <a href="#"
                       ><img
                         src="theme/frontend/images/youtube.png"
                         alt=""
-                        class="mr-2 flex-shrink-0"
+                        class="p-1"
                     /></a>
                   </li>
                 </ul>
@@ -853,6 +853,26 @@
         </div>
       </div>
     </footer>
+    <div class="plugin-more fixed">
+      <img
+        src="theme/frontend/images/support.png"
+        alt=""
+        class="hidden md:block"
+      />
+      <a
+        href="tel:0935 363 986"
+        class="p-3 bg-[#00A524] w-12 h-12 inline-block rounded-full fixed top-1/2 right-4 md:right-auto md:absolute md:top-5"
+      >
+        <img src="theme/frontend/images/icon-call.png" alt="" />
+      </a>
+      <a
+        href="#"
+        class="p-3 bg-[#008EDE] w-12 h-12 inline-block rounded-full fixed top-2/3 right-4 md:right-auto md:absolute md:-top-10 md:left-14"
+      >
+        <img src="theme/frontend/images/chat.png" alt="" />
+      </a>
+    </div>
+    
     <script src="theme/frontend/js/swiper-bundle.min.js"></script>
     <script src="theme/frontend/js/main.js"></script>
   </body>
