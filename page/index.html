@@ -12,18 +12,26 @@
   <body>
     <header class="header header-index bg-[#FFFFFF33] relative">
       <div class="">
-        <div class="hampurger block xl:hidden">
-          <span> <i class="fa-solid fa-bars"></i></span>
-        </div>
-        <div class="logo absolute h-full">
+        <div class="logo absolute hidden lg:block lg:top-0 lg:left-0 h-full">
           <a href="#" class="h-logo flex items-center justify-center h-full">
             <img src="theme/frontend/images/logo-2.png" alt="" />
           </a>
         </div>
-        <div class="menu-header">
-          <div class="container mx-auto dp:px-64 xl:px-16 2xl:px-32">
-            <div class="flex">
-              <div class="menu xl:flex justify-center flex-1 hidden">
+        <div class="menu-header bg-[#fff] lg:bg-transparent">
+          <div class="container mx-auto dp:px-64 xl:px-16 2xl:px-32 px-3">
+            <div class="sm:flex justify-between">
+              <div class="flex lg:hidden justify-between items-center">
+                <span class="icon-menu"><i class="fa-solid fa-bars"></i></span>
+                <div class="flex items-center h-full">
+                  <a
+                    href="#"
+                    class="h-logo flex items-center justify-center bg-[#fff] py-3"
+                  >
+                    <img src="theme/frontend/images/logo-2.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="menu lg:flex justify-center flex-1">
                 <ul>
                   <li>
                     <a href="#">Trang chủ</a>
@@ -47,7 +55,7 @@
                   </span>
                 </div>
               </div>
-              <div class="hotline py-9">
+              <div class="hotline hidden sm:block py-5 2xl:py-7 dp:py-9">
                 <a href="tel:0935363986" class="flex items-center bg-[#ffffff]">
                   <div class="icon-hotline mx-2">
                     <img src="theme/frontend/images/icon-hotline.svg" alt="" />
@@ -64,27 +72,30 @@
                   </div>
                 </a>
               </div>
+              <div
+                class="over-lay fixed lg:hidden block w-full h-full bg-[rgba(0,0,0,.7)] top-0 right-[-100%] z-50 transition-all duration-300"
+              ></div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section class="section-banner">
+    <section class="section-banner mt-20 lg:mt-0">
       <div class="banner-home h-full relative">
         <div class="bg-banner-home">
           <img src="theme/frontend/images/banner-home.png" alt="" />
         </div>
         <div
-          class="container dp:px-64 mx-auto 2xl:px-32 xl:px-16 absolute top-1/2 left-0 -translate-y-1/2 px-2.5 lg:px-8"
+          class="container dp:px-64 mx-auto 2xl:px-32 xl:px-16 absolute top-1/2 left-1/2 xl:left-0 -translate-x-1/2 -translate-y-1/2 xl:translate-y-0 px-2.5 lg:px-8"
         >
           <div class="xl:w-1/2 w-full">
-            <div class="title text-white text-center lg:text-left">
+            <div class="title text-white text-center xl:text-left">
               <h1
-                class="dp:text-[64px] 2xl:text-[56px] mb-4 xl:text-[48px] lg:text-[40px] text-[24px] capitalize font-semibold"
+                class="dp:text-[64px] 2xl:text-[56px] mb-4 xl:text-[48px] lg:text-[40px] text-[32px] capitalize font-semibold"
               >
                 <span>cơ hội đầu tư khủng từ Miền đất hứa</span>
               </h1>
-              <p class="dp:text-[18px]">
+              <p class="dp:text-[18px] hidden sm:block">
                 <span
                   >Lorem ipsum dolor sit amet consectetur. Duis et odio egestas
                   sem malesuada pellentesque. Lacus id auctor in euismod laoreet
@@ -94,7 +105,7 @@
               </p>
             </div>
             <div
-              class="btn_more dp:mt-10 2xl:mt-8 mt-6 flex justify-center lg:justify-normal"
+              class="btn_more dp:mt-10 2xl:mt-8 mt-6 flex justify-center xl:justify-normal"
             >
               <a
                 href="#"
@@ -113,7 +124,9 @@
       <div class="container mx-auto px-2.5 lg:px-8 2xl:px-32 xl:px-16 dp:px-64">
         <div class="flex flex-wrap justify-between lg:-mx-7">
           <div class="title mb-10 lg:mb-0 w-full lg:w-1/2 lg:px-7">
-            <h2 class="dp:text-[36px] font-semibold capitalize relative pb-4">
+            <h2
+              class="text-[24px] xl:text-[28px] 2xl:text-[32px] dp:text-[36px] font-semibold capitalize relative pb-4"
+            >
               <span>Giới thiệu về tỉnh lào cai</span>
             </h2>
             <p class="xl:text-[18px] mt-6">
@@ -162,10 +175,10 @@
           </h2>
         </div>
         <div class="land-sale mt-10">
-          <div class="list-items-land flex flex-wrap justify-between -mx-2">
-            <div
-              class="item-land-sale w-1/2 max-w-[50%] md:w-1/3 md:max-w-[33%] lg:w-1/4 lg:max-w-[25% ] px-2 relative"
-            >
+          <div
+            class="list-items-land hidden lg:flex flex-wrap justify-between -mx-2"
+          >
+            <div class="item-land-sale lg:w-1/4 px-2 relative">
               <div class="decor-sale-land overflow-hidden">
                 <a href="#" class="c-img img">
                   <img
@@ -195,9 +208,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="item-land-sale w-1/2 max-w-[50%] md:w-1/3 md:max-w-[33%] lg:w-1/4 lg:max-w-[25% ] px-2 relative"
-            >
+            <div class="item-land-sale lg:w-1/4 px-2 relative">
               <div class="decor-sale-land overflow-hidden">
                 <a href="#" class="c-img img">
                   <img
@@ -227,9 +238,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="item-land-sale w-1/2 max-w-[50%] md:w-1/3 md:max-w-[33%] lg:w-1/4 lg:max-w-[25% ] px-2 relative"
-            >
+            <div class="item-land-sale lg:w-1/4 px-2 relative">
               <div class="decor-sale-land overflow-hidden">
                 <a href="#" class="c-img img">
                   <img
@@ -259,9 +268,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="item-land-sale w-1/2 max-w-[50%] md:w-1/3 md:max-w-[33%] lg:w-1/4 lg:max-w-[25% ] px-2 relative"
-            >
+            <div class="item-land-sale lg:w-1/4 px-2 relative">
               <div class="decor-sale-land overflow-hidden">
                 <a href="#" class="c-img img">
                   <img
@@ -288,6 +295,148 @@
                     ><span>Xem Chi Tiết</span>
                     <i class="fa-solid fa-arrow-right"></i
                   ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:hidden block">
+            <div class="swiper sl-landing_mains">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item-land-sale relative">
+                    <div class="decor-sale-land overflow-hidden">
+                      <a href="#" class="c-img img">
+                        <img
+                          src="theme/frontend/images/decor-land.png"
+                          alt=""
+                          class="img-decor"
+                        />
+                        <img
+                          src="theme/frontend/images/img-sale.png"
+                          alt=""
+                          class="img-pro"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="info-item bg-[#003959] text-[#fff] relative -mt-3 p-4"
+                    >
+                      <div
+                        class="title capitalize dp:text-[24px] font-semibold"
+                      >
+                        <p><span>Đất nền</span></p>
+                        <p><span>Tại Bảo Yên</span></p>
+                      </div>
+                      <div class="flex">
+                        <a href="#"
+                          ><span>Xem Chi Tiết</span>
+                          <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-land-sale relative">
+                    <div class="decor-sale-land overflow-hidden">
+                      <a href="#" class="c-img img">
+                        <img
+                          src="theme/frontend/images/decor-land.png"
+                          alt=""
+                          class="img-decor"
+                        />
+                        <img
+                          src="theme/frontend/images/img-sale.png"
+                          alt=""
+                          class="img-pro"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="info-item bg-[#003959] text-[#fff] relative -mt-3 p-4"
+                    >
+                      <div
+                        class="title capitalize dp:text-[24px] font-semibold"
+                      >
+                        <p><span>Đất nền</span></p>
+                        <p><span>Tại Bảo Yên</span></p>
+                      </div>
+                      <div class="flex">
+                        <a href="#"
+                          ><span>Xem Chi Tiết</span>
+                          <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-land-sale relative">
+                    <div class="decor-sale-land overflow-hidden">
+                      <a href="#" class="c-img img">
+                        <img
+                          src="theme/frontend/images/decor-land.png"
+                          alt=""
+                          class="img-decor"
+                        />
+                        <img
+                          src="theme/frontend/images/img-sale.png"
+                          alt=""
+                          class="img-pro"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="info-item bg-[#003959] text-[#fff] relative -mt-3 p-4"
+                    >
+                      <div
+                        class="title capitalize dp:text-[24px] font-semibold"
+                      >
+                        <p><span>Đất nền</span></p>
+                        <p><span>Tại Bảo Yên</span></p>
+                      </div>
+                      <div class="flex">
+                        <a href="#"
+                          ><span>Xem Chi Tiết</span>
+                          <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item-land-sale relative">
+                    <div class="decor-sale-land overflow-hidden">
+                      <a href="#" class="c-img img">
+                        <img
+                          src="theme/frontend/images/decor-land.png"
+                          alt=""
+                          class="img-decor"
+                        />
+                        <img
+                          src="theme/frontend/images/img-sale.png"
+                          alt=""
+                          class="img-pro"
+                        />
+                      </a>
+                    </div>
+                    <div
+                      class="info-item bg-[#003959] text-[#fff] relative -mt-3 p-4"
+                    >
+                      <div
+                        class="title capitalize dp:text-[24px] font-semibold"
+                      >
+                        <p><span>Đất nền</span></p>
+                        <p><span>Tại Bảo Yên</span></p>
+                      </div>
+                      <div class="flex">
+                        <a href="#"
+                          ><span>Xem Chi Tiết</span>
+                          <i class="fa-solid fa-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -602,8 +751,12 @@
           <div
             class="main-footer order-2 xl:order-1 2xl:pt-14 xl:pt-10 pt-6 pb-4 w-full xl:w-3/5 xl:px-12"
           >
-            <div class="flex flex-wrap items-end -px-3 md:-px-6 2xl:-px-8 dp:-px-12">
-              <div class="w-full md:w-2/5 lg:w-2/5 xl:w-2/5 px-3 md:px-6 2xl:px-8 dp:px-12 mb-4 lg:mb-0">
+            <div
+              class="flex flex-wrap items-end -px-3 md:-px-6 2xl:-px-8 dp:-px-12"
+            >
+              <div
+                class="w-full md:w-2/5 lg:w-2/5 xl:w-2/5 px-3 md:px-6 2xl:px-8 dp:px-12 mb-4 lg:mb-0"
+              >
                 <div class="mb-8">
                   <a href="#" class="logo-footer">
                     <img src="theme/frontend/images/logo-footer.png" alt="" />
@@ -674,7 +827,9 @@
                   </li>
                 </ul>
               </div>
-              <div class="w-2/5 md:w-1/4 lg:w-1/4 xl:w-1/4 px-3 md:px-6 2xl:px-8 dp:px-12 mb-4 lg:mb-0">
+              <div
+                class="w-2/5 md:w-1/4 lg:w-1/4 xl:w-1/4 px-3 md:px-6 2xl:px-8 dp:px-12 mb-4 lg:mb-0"
+              >
                 <p
                   class="title font-semibold text-[18px] mb-7 uppercase text-[#fff]"
                 >
@@ -690,7 +845,9 @@
                   </ul>
                 </div>
               </div>
-              <div class="w-3/5 md:w-1/3 lg:w-1/3 xl:w-1/3 px-3 md:px-6 2xl:px-8 dp:px-12 mb-4 lg:mb-0">
+              <div
+                class="w-3/5 md:w-1/3 lg:w-1/3 xl:w-1/3 px-3 md:px-6 2xl:px-8 dp:px-12 mb-4 lg:mb-0"
+              >
                 <p
                   class="title font-semibold text-[18px] mb-7 uppercase text-[#fff]"
                 >
@@ -812,7 +969,8 @@
                     <button
                       class="text-white btn-more px-[22px] text-[18px] flex items-center py-3"
                     >
-                      <span class="mr-2 capitalize font-semibold">Tư vấn ngay</span
+                      <span class="mr-2 capitalize font-semibold"
+                        >Tư vấn ngay</span
                       ><i class="fa-solid fa-arrow-right"></i>
                     </button>
                   </div>
