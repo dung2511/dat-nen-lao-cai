@@ -74,11 +74,9 @@ body {
   z-index: 10;
 }
 .btn-more {
-  background-image: linear-gradient(to right, #00a573, #008ede);
-  transition: 0.3s ease-in-out;
-  border: solid;
-  border-image: linear-gradient(to right, #00a573, #008ede);
-  border-image-slice: 1;
+  background-color: #00a573;
+  transition: all 0.3s;
+  border: 2px solid #00a573;
 }
 .btn-call {
   background-image: linear-gradient(to right, #00a573, #008ede);
@@ -98,10 +96,8 @@ body {
   border-image-slice: 1;
 }
 .btn-more:hover {
-  background: -webkit-linear-gradient(#00a573, #008ede);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: #ffffff;
+  color: #00a573;
 }
 .section-introduce .title h2::after {
   content: "";
@@ -450,4 +446,11 @@ label.star:before {
 }
 .bg-banner-home img {
   width: 100%;
+}
+.header-index {
+  transition: all 0.3s;
+  border-bottom: 1px solid #ffffff;
+}
+.header-index.bg-header-scroll {
+  background-image: linear-gradient(to right, #00a573, #008ede);
 }
