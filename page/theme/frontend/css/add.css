@@ -118,14 +118,10 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.section-sale_home .item-land-sale .decor-sale-land img,
-.section-sale_home .item-land-sale .img-sale img {
-  transition: all 0.3s;
+.section-sale_home .item-land-sale img {
+  transition: all 1s;
 }
-.section-sale_home .item-land-sale:hover .decor-sale-land img {
-  transform: scale(1.3);
-}
-.section-sale_home .item-land-sale:hover .img-sale img {
+.section-sale_home .item-land-sale:hover img {
   transform: scale(1.2);
 }
 .section-news .title h2::after {
@@ -138,9 +134,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.info-item {
-  clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 100%);
-}
+
 .section-news .list-new__index .item-news .image .c-img,
 .section-post-relate .list-new__index .item-news .image .c-img {
   padding-top: 54%;
@@ -276,6 +270,9 @@ body {
 .section-post-relate .item-news {
   transition: all 0.3s;
 }
+.section-news .item-news img {
+  transition: all 1s;
+}
 .section-news .item-news .btn-more-news {
   transition: all 0.3s;
 }
@@ -392,17 +389,14 @@ label.star:before {
   -webkit-text-fill-color: transparent;
   margin-right: 4px;
 }
-.section-news .item-news:hover .btn-find-more,
+.section-news .item-news .btn-find-more,
 .section-news .item-news .btn-find-more span,
 .section-sale_home .item-land-sale .view-detail span,
 .btn-more span {
   transition: all 0.3s;
 }
 .section-news .item-news:hover .btn-find-more {
-  background: -webkit-linear-gradient(#00a573, #008ede);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #008ede;
 }
 .section-news .item-news:hover .btn-find-more span {
   margin-right: 1rem;
@@ -428,13 +422,15 @@ label.star:before {
   right: 32px;
   z-index: 9999;
 }
-.modal-register {
+.modal-register,
+.form-search {
   display: none;
 }
 .modal-register.active {
   display: block;
 }
-.list-post-m .item-post h3 {
+.list-post-m .item-post h3,
+.list-post .item-post h3 {
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -450,7 +446,42 @@ label.star:before {
 .header-index {
   transition: all 0.3s;
   border-bottom: 1px solid #ffffff;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .header-index.bg-header-scroll {
-  background-image: linear-gradient(to right, #00a573, #008ede);
+  /* background-image: linear-gradient(to right, #00a573, #008ede); */
+  background-color: #00a573;
+}
+.section-sale_home .item-land-sale .title {
+  transition: all 1s;
+}
+.section-sale_home .item-land-sale:hover .title {
+  color: #008ede;
+}
+.section-sale_home .item-land-sale::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/item.png);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  z-index: 10;
+  background-size: 100%;
+}
+.section-sale_home .item-land-sale::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/decor-title.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
 }
