@@ -31,7 +31,7 @@ var PROGRAM = (function () {
 
   var slideLandingSaleHome = function () {
     const sl_landingSale = document.querySelector(".sl-landing_mains");
-    if (sl_landingSale === "undefined") return;
+    if (typeof sl_landingSale === "undefined") return;
     var swiperLangdingSale = new Swiper(sl_landingSale, {
       slidesPerView: "auto",
       spaceBetween: 16,
@@ -57,7 +57,7 @@ var PROGRAM = (function () {
     });
     document.addEventListener("DOMContentLoaded", function () {
       const sliders = document.querySelectorAll(".swiper-images-landing");
-      if (sliders === "undefined") return;
+      if (typeof sliders === "undefined") return;
       sliders.forEach((slider) => {
         const sliderId = slider.dataset.sliderId;
         slideImgLanding(sliderId);
@@ -68,16 +68,20 @@ var PROGRAM = (function () {
     const openModalRegister = document.querySelector(".btn-register");
     const closeModalRegister = document.querySelector(".box-close-modal");
     const modalRegister = document.querySelector(".modal-register");
-    openModalRegister.addEventListener("click", function () {
-      if (window.getComputedStyle(modalRegister).display === "none") {
-        modalRegister.classList.add("active");
-      }
-    });
-    closeModalRegister.addEventListener("click", function () {
-      if (window.getComputedStyle(modalRegister).display === "block") {
-        modalRegister.classList.remove("active");
-      }
-    });
+    if (modalRegister != undefined) {
+      openModalRegister.addEventListener("click", function () {
+        if (window.getComputedStyle(modalRegister).display === "none") {
+          modalRegister.classList.add("active");
+        }
+      });
+      closeModalRegister.addEventListener("click", function () {
+        if (window.getComputedStyle(modalRegister).display === "block") {
+          modalRegister.classList.remove("active");
+        }
+      });
+    } else {
+      return;
+    }
   };
   return {
     _: function () {
