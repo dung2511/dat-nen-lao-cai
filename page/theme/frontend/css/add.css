@@ -368,6 +368,26 @@ body {
 .section-detail_news .box-news-latest {
   box-shadow: 6px 8px 48px rgba(0, 0, 0, 0.1);
 }
+.section-advantage .title h2::after,.section-sale-landing .title h2::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background: #252525;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-extension .title h2::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .section-detail_news .tag-post .title::after {
   content: "";
   width: 120px;
