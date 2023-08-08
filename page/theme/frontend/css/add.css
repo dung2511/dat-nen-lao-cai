@@ -349,7 +349,6 @@ body {
   }
   .header .menu-header .menu.active {
     left: 0;
-
   }
   .header .menu-header .menu.active ul li a {
     color: #fff;
@@ -452,7 +451,8 @@ label.star:before {
   transition: all 0.3s;
   border-bottom: 1px solid #ffffff;
   transition: background-color 0.3s ease-in-out;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .header-index.bg-header-scroll {
   /* background-image: linear-gradient(to right, #00a573, #008ede); */
@@ -464,10 +464,10 @@ label.star:before {
 .section-sale_home .item-land-sale:hover .title {
   color: #008ede;
 }
-.section-sale_home .item-land-sale::before {
+/* .section-sale_home .item-land-sale .c-img::before {
   content: "";
   position: absolute;
-  background-image: url(../images/item.png);
+  background-image: url(../images/decor-1.png);
   width: 100%;
   height: 100%;
   top: 0;
@@ -475,4 +475,36 @@ label.star:before {
   background-repeat: no-repeat;
   z-index: 3;
   background-size: 100%;
+} */
+.section-sale_home .item-land-sale::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/decor-title.png);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  z-index: 3;
+  background-size: 100%;
+  top:0;
+}
+.section-sale_home .item-land-sale::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/decor.png);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  z-index: 3;
+  background-size: 100%;
+  transition: all 1s;
+}
+.section-sale_home .item-land-sale .info-item {
+  z-index: 10;
+}
+.section-sale_home .item-land-sale:hover::before {
+  transform: scale(1.08);
 }

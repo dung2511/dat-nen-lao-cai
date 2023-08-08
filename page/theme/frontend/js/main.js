@@ -36,17 +36,23 @@ var PROGRAM = (function () {
 			slidesPerView: "auto",
 			spaceBetween: 16,
 			breakpoints: {
+				1366: {
+					slidesPerView: 4
+				},
+				1280: {
+					slidesPerView: 3.5
+				},
 				1024: {
-					slidesPerView: 4,
+					slidesPerView: 2.5,
 				},
 				768: {
-					slidesPerView: 3,
+					slidesPerView: 2,
 				},
 				320: {
 					slidesPerView: 1,
 				},
-				425: {
-					slidesPerView: 2,
+				640: {
+					slidesPerView: 1.5,
 				},
 			},
 		});
