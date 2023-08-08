@@ -358,7 +358,7 @@ body {
   }
   .over-lay.show {
     right: 0;
-    width: calc(100% - 320px);
+    width: calc(100% - min(320px, 50%));
   }
   .over-lay {
     width: 0;
@@ -464,18 +464,6 @@ label.star:before {
 .section-sale_home .item-land-sale:hover .title {
   color: #008ede;
 }
-/* .section-sale_home .item-land-sale .c-img::before {
-  content: "";
-  position: absolute;
-  background-image: url(../images/decor-1.png);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-repeat: no-repeat;
-  z-index: 3;
-  background-size: 100%;
-} */
 .section-sale_home .item-land-sale::after {
   content: "";
   position: absolute;
@@ -487,7 +475,7 @@ label.star:before {
   background-repeat: no-repeat;
   z-index: 3;
   background-size: 100%;
-  top:0;
+  top: 0;
 }
 .section-sale_home .item-land-sale::before {
   content: "";
