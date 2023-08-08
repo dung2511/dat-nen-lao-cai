@@ -340,7 +340,7 @@ body {
     width: 100%;
     height: 100%;
     overflow-y: auto;
-    max-width: min(240px, 50%);
+    max-width: min(320px, 50%);
     background: #008ede;
     z-index: 100;
     -webkit-transition: all 0.3s;
@@ -349,6 +349,7 @@ body {
   }
   .header .menu-header .menu.active {
     left: 0;
+
   }
   .header .menu-header .menu.active ul li a {
     color: #fff;
@@ -358,6 +359,10 @@ body {
   }
   .over-lay.show {
     right: 0;
+    width: calc(100% - 320px);
+  }
+  .over-lay {
+    width: 0;
   }
 }
 .section-news .box-news-latest,
@@ -468,20 +473,6 @@ label.star:before {
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  z-index: 10;
+  z-index: 3;
   background-size: 100%;
-}
-.section-sale_home .item-land-sale::after {
-  content: "";
-  position: absolute;
-  background-image: url(../images/decor-title.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  z-index: 10;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
 }

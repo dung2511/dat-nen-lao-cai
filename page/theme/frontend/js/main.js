@@ -53,18 +53,22 @@ var PROGRAM = (function () {
 	};
 	var slideImgLanding = function () {
 		document.addEventListener("DOMContentLoaded", function () {
-			const sliders = document.querySelectorAll(".box-slide");
+			const sliders = document.querySelectorAll(".item-landing");
 			if (sliders.length == 0) return;
-			sliders.forEach((elmt) => {
-				var slider = elmt.querySelector(".slider-container");
-				var nuttrai = elmt.querySelector(".nut-trai");
-				var nutphái = elmt.querySelector(".nut-phai");
+			sliders.forEach((element) => {
+				var slider = element.querySelector(".swiper-images-landing");
+				var prev = element.querySelector(".swiper-button-prev");
+				var next = element.querySelector(".swiper-button-next");
+				var pagination = element.querySelector(".swiper-pagination")
 				var option = {
 					slidesPerView: 1,
 					navigation: {
-						nextEl: nuttrai,
-						prevEl: nutphái,
+						nextEl: next,
+						prevEl: prev,
 					},
+					pagination: {
+						el: pagination
+					}
 				};
 				new Swiper(slider, option);
 			});
