@@ -1417,6 +1417,14 @@ video {
   .md\:text-\[18px\] {
     font-size: 18px;
   }
+
+  .md\:text-\[36px\] {
+    font-size: 36px;
+  }
+
+  .md\:text-\[28px\] {
+    font-size: 28px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1525,6 +1533,14 @@ video {
 
   .lg\:text-\[18px\] {
     font-size: 18px;
+  }
+
+  .lg\:text-\[36px\] {
+    font-size: 36px;
+  }
+
+  .lg\:text-\[20px\] {
+    font-size: 20px;
   }
 }
 
