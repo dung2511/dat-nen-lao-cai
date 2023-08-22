@@ -1,10 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["page/*.{html,js}" ],
+  content: ["page/*.{html,js}"],
   theme: {
     extend: {
-      screens: {
-        dp: "1920px"
+      colors: {
+        "cus-orange": "#e7882a",
+        "cus-blue":"#007fc5",
+        "cus-blue-2":"#005591",
+        "cus-green":"#0c9849"
       }
     },
   },
